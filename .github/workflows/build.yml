@@ -2,6 +2,8 @@ name: "Build and populate cache"
 on:
   pull_request:
   push:
+    branches:
+      - master
   schedule:
     # everyday at 5:40
     - cron:  '40 5 * * *'
@@ -24,7 +26,6 @@ jobs:
       uses: cachix/install-nix-action@v20
       with:
         nix_path: "${{ matrix.nixPath }}"
-        install_url: https://releases.nixos.org/nix/nix-2.5.1/install
         extra_nix_config: |
           experimental-features = nix-command flakes
           access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
