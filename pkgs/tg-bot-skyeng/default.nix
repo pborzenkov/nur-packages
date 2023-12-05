@@ -11,10 +11,10 @@ buildGoModule {
     owner = "pachmu";
     repo = "skyeng-push-notificator";
     rev = "645c17d2cfc979adca3673ed07a26a6b9631690d";
-    sha256 = "0684qxvc3izi60ly5rbxasl24cfxpx3lqx8p7bwwly95n8mc960c";
+    sha256 = "sha256-DJjEKrIlecr5Ohd1TEe/3TEiqFZ95eIpMPHHwXbHBBk=";
   };
 
-  vendorHash = "1893j1v6qvflmx3qlbn8kikwypphr612r9p5f1y1d27x4m85by8f";
+  vendorHash = "sha256-DvlVUCX9iBZ8cOWmLILJ8F7PZ5zILopHr9RtbHaQI6E=";
 
   subPackages = ["cmd"];
 
